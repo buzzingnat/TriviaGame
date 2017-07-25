@@ -1,0 +1,29 @@
+.end {
+	margin-top: 15px;
+}
+
+.imageContainer {
+	margin: 15px 0;
+	height: 200px;
+	width: 100%;
+	overflow: hidden;
+	/*
+	background: url("https://images.pexels.com/photos/97317/pexels-photo-97317.jpeg?w=940&h=650&auto=compress&cs=tinysrgb");
+	background-size: cover;
+	background-position: 50% 60%;
+	*/
+}
+
+header img {
+	transform: translateY(-33%);
+	margin: 0 auto;
+	display: block;
+}
+
+.hardMode {
+	margin: 15px 0;
+}
+
+.timerDisplay, .end {
+	display: none;
+}
