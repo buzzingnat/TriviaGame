@@ -27,3 +27,7 @@ header img {
 .timerDisplay, .end {
 	display: none;
 }
+
+.radio {
+	margin-top: -5px;
+}

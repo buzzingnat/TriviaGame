@@ -3,7 +3,7 @@ var animals = [
     { kind: "cats", group: "clowder" },
     { kind: "butterflies", group: "flutter" },
     { kind: "bears", group: "sloth" },
-    { kind: "crocodiles", group: "congregation" },
+    { kind: "crocodiles", group: "bask" },
     { kind: "cormorants", group: "gulp" },
     { kind: "ferrets", group: "busyness" },
     { kind: "finches", group: "charm" },
@@ -11,6 +11,15 @@ var animals = [
     { kind: "squirrels", group: "scurry" },
     { kind: "tigers", group: "streak" },
     { kind: "wombats", group: "wisdom" },
+    { kind: "badgers", group: "cete" },
+    { kind: "bees", group: "swarm" },
+    { kind: "boars", group: "sounder" },
+    { kind: "crows", group: "murder" },
+    { kind: "eagles", group: "convocation" },
+    { kind: "flamingoes", group: "flamboyance" },
+    { kind: "foxes", group: "skulk" },
+    { kind: "hawks", group: "boil" },
+    { kind: "hedgehogs", group: "array" },
 ];
 
 var images = [

@@ -4,13 +4,13 @@ var game = {
 	timer: null,
 	init: function() {
 		// initialize game
-		$(".questions").hide();
+		$(".questionsContainer").hide();
 		$(".timerDisplay").hide();
 		game.reset();
 	},
 	reset: function() {
 		game.questionIndex = 1;
-		$(".questions").empty();
+		$(".questionsContainer").empty();
 		game.questionArray = null;
 		game.timer = null;
 		$(".end").hide();
@@ -28,7 +28,7 @@ var game = {
 	},
 	onTimeEnd: function() {
 		// hide main game screen and progress bars
-		$(".questions").hide();
+		$(".questionsContainer").hide();
 		$(".timerDisplay").hide();
 		// show end screen
 		$(".end").show();
@@ -60,7 +60,7 @@ var game = {
 		// reset to start from scratch
 		game.reset();
 		// show main game screen and progress bars
-		$(".questions").show();
+		$(".questionsContainer").show();
 		$(".timerDisplay").show();
 		// hide play button
 		$("button").hide();
@@ -150,16 +150,16 @@ var game = {
     	var questionString = questionType === "kind" ?
     		questionString = `What do you call a group of ${question}?` :
     		`What kind of animals gather in a ${question}?`;
-    	var $outside = $(`<form class="form-group" id="question${game.questionIndex}" value="${correctAnswer}"></form>`);
-    	var $legend = $outside.append(`<legend>${questionString}</legend>`);
+    	var $outside = $(`<form class="form-group row" id="question${game.questionIndex}" value="${correctAnswer}"></form>`);
+    	var $legend = $outside.append(`<legend class="col-md-12">${questionString}</legend>`);
     	for (var i = 0; i < 4; i++) {
     		var answerString = `${optionArray[i]}`;
     		if (answerType === "group") answerString = "a " + answerString;
     		var labelHTML = `<input type="radio" name="optradio" value="${optionArray[i]}">`;
-    		var $option = $outside.append(`<label class="radio-inline">${labelHTML}${answerString}</label>`);
+    		var $option = $outside.append(`<div class="radio col-md-3"><label>${labelHTML}${answerString}</label></div>`);
 		}
 		// append it to the questions section
-		$(".questions").append($outside);
+		$(".questionsContainer").append($outside);
 		game.questionIndex++;
 		game.questionArray.splice(0, 1);
 	},

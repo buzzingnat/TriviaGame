@@ -6,11 +6,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/stickyFooter.css">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
-<body>
-    <div class="container">
+<body class="site">
+    <div class="container siteContent">
 	    <header class="row">
 		    <div class="col-md-8">
 		        <h1>Animal Group Trivia</h1>
@@ -41,7 +42,7 @@
 			</div><!-- /col -->
 		</section>
 	    <section class="questions row">
-	    	<div class="col-md-12">
+	    	<div class="col-md-12 questionsContainer">
 		    	<!-- <form class="form-group" id="question1">
 		    		<fieldset>
 			    		<legend>What do you call a group of crocodiles?</legend>
@@ -81,11 +82,17 @@
 			</div><!-- /col -->
 	    </section>
     </div>
+    <footer class="footer">
+	    <div class="container">
+	        <p class="text-muted" id="copyright"></p>
+	    </div>
+	</footer>
     <!-- load JS at end of file -->
     <script src="https://cdn.jsdelivr.net/lodash/4.17.4/lodash.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<script src="assets/javascript/dictionary.js"></script>
+	<script src="assets/javascript/copyright.js"></script>
 	<script src="assets/javascript/app-copy.js"></script>
 	<!--<script src="assets/javascript/app-hard.js"></script>-->
 </body>
